@@ -1,0 +1,106 @@
+@import "shadcn/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass-panel {
+    @apply bg-card/60 backdrop-blur-xl border border-border shadow-sm;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 120 33% 2%;
+    --foreground: 125 46% 94%;
+    --card: 120 33% 5%;
+    --card-foreground: 125 46% 94%;
+    --popover: 120 33% 5%;
+    --popover-foreground: 125 46% 94%;
+    --primary: 135 100% 50%;
+    --primary-foreground: 120 33% 2%;
+    --secondary: 120 29% 9%;
+    --secondary-foreground: 135 100% 61%;
+    --muted: 120 29% 7%;
+    --muted-foreground: 127 12% 43%;
+    --accent: 120 29% 9%;
+    --accent-foreground: 135 100% 61%;
+    
+    /* Semantic Colors */
+    --critical: 0 100% 65%;
+    --critical-foreground: 120 33% 2%;
+    --high: 39 68% 55%;
+    --high-foreground: 120 33% 2%;
+    --medium: 135 100% 50%;
+    --medium-foreground: 120 33% 2%;
+    --low: 145 100% 39%;
+    --low-foreground: 125 46% 94%;
+    --info: 135 100% 50%;
+    --info-foreground: 120 33% 2%;
+    --success: 145 100% 39%;
+    --success-foreground: 125 46% 94%;
+    
+    --destructive: 0 100% 65%;
+    --border: 125 41% 16%;
+    --input: 125 41% 11%;
+    --ring: 135 100% 50%;
+    
+    --radius: 0.5rem;
+    
+    --chart-1: 135 100% 50%;
+    --chart-2: 0 100% 65%;
+    --chart-3: 39 68% 55%;
+    --chart-4: 145 100% 39%;
+    --chart-5: 142 88% 26%;
+  }
+
+  .dark {
+    --background: 120 33% 2%;
+    --foreground: 125 46% 94%;
+    --card: 120 33% 5%;
+    --card-foreground: 125 46% 94%;
+    --popover: 120 33% 5%;
+    --popover-foreground: 125 46% 94%;
+    --primary: 135 100% 50%;
+    --primary-foreground: 120 33% 2%;
+    --secondary: 120 29% 9%;
+    --secondary-foreground: 135 100% 61%;
+    --muted: 120 29% 7%;
+    --muted-foreground: 127 12% 43%;
+    --accent: 120 29% 9%;
+    --accent-foreground: 135 100% 61%;
+    
+    /* Semantic Colors */
+    --critical: 0 100% 65%;
+    --critical-foreground: 120 33% 2%;
+    --high: 39 68% 55%;
+    --high-foreground: 120 33% 2%;
+    --medium: 135 100% 50%;
+    --medium-foreground: 120 33% 2%;
+    --low: 145 100% 39%;
+    --low-foreground: 125 46% 94%;
+    --info: 135 100% 50%;
+    --info-foreground: 120 33% 2%;
+    --success: 145 100% 39%;
+    --success-foreground: 125 46% 94%;
+    
+    --destructive: 0 100% 65%;
+    --border: 125 41% 16%;
+    --input: 125 41% 11%;
+    --ring: 135 100% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    color-scheme: dark;
+  }
+}
